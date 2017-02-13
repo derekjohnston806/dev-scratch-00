@@ -17,7 +17,7 @@ export default class scratchpad0 extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          This guy
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.ios.js
