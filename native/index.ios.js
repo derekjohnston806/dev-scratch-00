@@ -5,49 +5,54 @@
  */
 
 import React, { Component } from 'react';
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
+import { AppRegistry, Navigator } from 'react-native';
+import FirstScene from "./src/scenes/FirstScene.react";
+import SecondScene from "./src/scenes/SecondScene.react";
 
-export default class scratchpad0 extends Component {
+class Application extends Component {
+  /**
+    renderScene(route, navigator)
+
+    @desc:
+      - based on the state of the navigator, render the approproate scene.
+
+    @param:
+      - route (Object): The route object from the navigation stack.
+      - navigator (Object): A reference to the navigator that invoked the object.
+  */
+  renderScene(route, navigator) {
+    switch (route.index) {
+      case 0:
+        return <FirstScene navigator={ navigator } />
+      case 1:
+        return <SecondScene navigator={ navigator } />
+    }
+  }
+
+  /**
+    render()
+
+    @desc:
+      - Draw the component on the screen.
+
+    @param:
+      - null
+
+    @return:
+      - null
+  */
   render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          This guy
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
-      </View>
-    );
+    const routes = [
+      { title: "First Scene", index: 0 },
+      { title: "Second Scene", index: 1 }
+    ];
+
+    return <Navigator
+      initialRoute={ routes[0] }
+      initialRouteStack={ routes }
+      renderScene={ this.renderScene }
+    />
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});
-
-AppRegistry.registerComponent('scratchpad0', () => scratchpad0);
+AppRegistry.registerComponent('scratchpad0', () => Application);
