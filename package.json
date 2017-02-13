@@ -1,0 +1,32 @@
+{
+  "name": "dev-scratch-00",
+  "version": "1.0.0",
+  "description": "A place to get familiar with some of the technologies I'm using in some of my projects. In this scratchpad I'll be working with React Native and Node.js. I'll also be exploring unit and integration testing with Jest and Appium. For completion's sake, I'll connect this repository to Code Climate for quality control and Travis-CI for continuous integration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derekjohnston806/dev-scratch-00.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "Express",
+    "Jest",
+    "Appium",
+    "Code",
+    "Climate",
+    "Codeclimate",
+    "Travis",
+    "Continuous",
+    "Integration"
+  ],
+  "author": "Derek Johnston",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derekjohnston806/dev-scratch-00/issues"
+  },
+  "homepage": "https://github.com/derekjohnston806/dev-scratch-00#readme"
+}
