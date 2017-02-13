@@ -32,6 +32,7 @@
   },
   "homepage": "https://github.com/derekjohnston806/dev-scratch-00#readme",
   "dependencies": {
+    "djtoolkit": "^1.1.0",
     "express": "^4.14.1"
   },
   "devDependencies": {

@@ -7,10 +7,8 @@
     @desc:
       The entry-point for the Node.js application.
 */
-import express from "express";
+import { Server } from "djtoolkit";
 
-const app = express();
+const server = new Server();
 
-app.listen(8888, () => {
-  console.log("Application is listening on port 8888");
-});
+server.start();
