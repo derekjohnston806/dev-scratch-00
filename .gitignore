@@ -2,4 +2,7 @@
 .DS_Store
 
 # Node.js Files
-node_modules
+node_modules/
+
+# Project Files
+/dist

@@ -1,4 +1,5 @@
 # Development Scratchpad 00
+[![Code Climate](https://lima.codeclimate.com/github/derekjohnston806/dev-scratch-00/badges/gpa.svg)](https://lima.codeclimate.com/github/derekjohnston806/dev-scratch-00)
 
 ### Repository Description
 A place to get familiar with some of the technologies I'm using
